@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+                    <!-- first registered container div -->
+    <div class="container">
+        <form action="" class="inp-div">
+        <input type="text" placeholder="Your first name" id="myInput" required> <br>
+        <input type="text" placeholder="Your Surname" id="yourInput" required> <br>
+        </form>
+        <button type="button" class="Next"id="Namebtn" onclick="getInputValue() 
+        next(1)">Next</button>
+    </div>
+                        <!-- questions and options with next button in positions-->
+    <div class="container">
+        <div class="question">
+            Suratul Naba' is chapter ______ of the holy Qur'an. <hr>
+        </div>
+        <input type="radio" name="question1"> 76  <br>
+        <input type="radio" name="question1">77 <br>
+        <input type="radio" name="question1">78 <br>
+        <input type="radio" name="question1"  id="correct1">79 <br>
+        <button class="Next" onclick="next(2)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">
+            An- Nabail Azeem means _______.  <hr>
+        </div>
+       
+        <input type="radio" name="question2">They'll know <br>
+        <input type="radio" name="question2"id="correct2">the great incident  <br>
+        <input type="radio" name="question2">the last day  <br>
+        <input type="radio" name="question2">the resurrection day <br>
+        <button class="Next" onclick="next(3)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Suratul Naba' was revealed in ______.  <hr>
+        </div>
+        <input type="radio" name="question3"id="correct3" >Makkah <br>
+        <input type="radio" name="question3">Madinah  <br>
+        <input type="radio" name="question3">Both  <br>
+        <input type="radio" name="question3">None<br>
+        <button class="Next" onclick="next(4)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Hadith literally means ______. <hr>
+        </div>
+        <input type="radio" name="question4" id="correct4"> New  <br>
+        <input type="radio" name="question4">old <br>
+        <input type="radio" name="question4">much   <br>
+        <input type="radio" name="question4">little <br>
+        <button class="Next" onclick="next(5)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">The sayings, deeds and tacit approval of the Prophet is known as ________.  <hr>
+        </div>
+        <input type="radio" name="question5" >Bid'ah<br>
+        <input type="radio" name="question5"> Qur'an  <br>
+        <input type="radio" name="question5"id="correct5">Sunnah <br>
+        <input type="radio" name="question5"> 'Aadah<br>
+        <button class="Next" onclick="next(6)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Practising Sunnah attracts _______.  <hr>
+        </div>
+        <input type="radio" name="question6"id="correct6" >reward  <br>
+        <input type="radio" name="question6">  no reward  <br>
+        <input type="radio" name="question6"> punishment <br>
+        <input type="radio" name="question6"> blame  <br>
+        <button class="Next" onclick="next(7)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Prophet Muhammad (SAAW) did go on seclusion in ______ before his prophethood.  <hr>
+        </div>
+        <input type="radio" name="question7" >Mount Arafah<br>
+        <input type="radio" name="question7"> Jabal Uhud  <br>
+        <input type="radio" name="question7">Ghaaroh Hirak <br>
+        <input type="radio" name="question7"id="correct7">Ghaar Hira <br>
+        <button class="Next" onclick="next(8)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Prophet Muhammad (SAAW) before prophethood was married to _______.  <hr>
+        </div>
+        <input type="radio" name="question8" >Aishah <br>
+        <input type="radio" name="question8"id="correct8"> Khadijah  <br>
+        <input type="radio" name="question8"> Hafsah <br>
+        <input type="radio" name="question8"> all of them<br>
+        <button class="Next" onclick="next(9)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Angel Jibril taught Prophet Muhammad (SAAW) ______ verses at their first meeting.   <hr>
+        </div>
+        <input type="radio" name="question9" id="correct9">2<br>
+        <input type="radio" name="question9"> 5<br>
+        <input type="radio" name="question9">7<br>
+        <input type="radio" name="question9">10 <br>
+        <button class="Next" onclick="next(10)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Laa ilaaha illaa Allaah is otherwise called _______.  <hr>
+        </div>
+        <input type="radio" name="question10" >Qawlush shahaadah <br>
+        <input type="radio" name="question10"> Qawlul haqq <br>
+        <input type="radio" name="question10">Kalimatul haqq <br>
+        <input type="radio" name="question10" id="correct10">Kalimatush shahaadah m<br>
+        <button class="Next" onclick="next(11)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Laa ilaaha illaa Allaah means _______.   <hr>
+        </div>
+        <input type="radio" name="question11" > All power belongs to Allaah <br>
+        <input type="radio" name="question11"> Thanks to Allaah  <br>
+        <input type="radio" name="question11"id="correct11"> There's no god except Allaah <br>
+        <input type="radio" name="question11">Glory be to Allaah <br>
+        <button class="Next" onclick="next(12)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">A person who disbelieves in laa ilaaha illaa Allaah becomes a ______.  <hr>
+        </div>
+        <input type="radio" name="question12" >less serious Muslim  <br>
+        <input type="radio" name="question12"id="correct12">  non Muslim  <br>
+        <input type="radio" name="question12">faithful <br>
+        <input type="radio" name="question12"> sinner<br>
+        <button class="Next" onclick="next(13)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Collection of Hadith started the time of the _______.  <hr>
+        </div>
+        <input type="radio" name="question13" >Prophet <br>
+        <input type="radio" name="question13"> Sahaabah <br>
+        <input type="radio" name="question13"id="correct13">both <br>
+        <input type="radio" name="question13">none<br>
+        <button class="Next" onclick="next(14)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">The most authentic book of Hadith is ______.  <hr>
+        </div>
+        <input type="radio" name="question14" >Sahih Muslim  <br>
+        <input type="radio" name="question14"id="correct14"> Sahih Bukhari <br>
+        <input type="radio" name="question14">Sunan Tirimidhi  <br>
+        <input type="radio" name="question14">Sunan Nasaai'<br>
+        <button class="Next" onclick="next(15)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">The companion that reported the highest number of Hadith was ______. <hr>
+        </div>
+        <input type="radio" name="question15" >Abu Bakr<br>
+        <input type="radio" name="question15"id="correct15"> Abu Hurayrah <br>
+        <input type="radio" name="question15"> Aishah<br>
+        <input type="radio" name="question15">Ibn Umar <br>
+        <button class="Next" onclick="next(16)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">The 3rd pillar of Islaam is _____.  <hr>
+        </div>
+        <input type="radio" name="question16" > Iman  <br>
+        <input type="radio" name="question16"id="correct16"> Zakat <br>
+        <input type="radio" name="question16">Salat <br>
+        <input type="radio" name="question16"> Sawm<br>
+        <button class="Next" onclick="next(17)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">The major lesson from Sawm is _______. <hr>
+        </div>
+        <input type="radio" name="question17" >Orderliness  <br>
+        <input type="radio" name="question17"> patience <br>
+        <input type="radio" name="question17"id="correct17">generosity <br>
+        <input type="radio" name="question17"> greed<br>
+        <button class="Next" onclick="next(18)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Hadith 3 of An-Nawawi's collection that taught about the pillars of Islaam was reported by ____.  <hr>
+        </div>
+        <input type="radio" name="question18" >Ibn Mas'ud  <br>
+        <input type="radio" name="question18"> Ibn Zubayr  <br>
+        <input type="radio" name="question18"id="correct18">Ibn Umar  <br>
+        <input type="radio" name="question18">Ibn Abbas<br>
+        <button class="Next" onclick="next(19)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">A Muslim can live peacefully with __. <hr>
+        </div>
+        <input type="radio" name="question19" id="correct19"> Other Muslims <br>
+        <input type="radio" name="question19"> non Muslims <br>
+        <input type="radio" name="question19">pagans <br>
+        <input type="radio" name="question19">anyone <br>
+        <button class="Next" onclick="next(20)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Living peacefully with others requires ______.  <hr>
+        </div>
+        <input type="radio" name="question20" >patience<br>
+        <input type="radio" name="question20"> tolerance  <br>
+        <input type="radio" name="question20"id="correct20">both <br>
+        <input type="radio" name="question20"> none<br>
+        <button class="Next" onclick="next(21)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">All are kinds of water except ______. <hr>
+        </div>
+        <input type="radio" name="question21">Pure water <br>
+        <input type="radio" name="question21"> clean water  <br>
+        <input type="radio" name="question21">unclean water  <br>
+        <input type="radio" name="question21" id="correct21"> none <br>
+        <button class="Next" onclick="next(22)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">______ is not a source of water.  <hr>
+        </div>
+        <input type="radio" name="question22" >Rain  <br>
+        <input type="radio" name="question22"> well <br>
+        <input type="radio" name="question22"id="correct22">tap <br>
+        <input type="radio" name="question22">none <br>
+        <button class="Next" onclick="next(23)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">	______ is used for purification.  <hr>
+        </div>
+        <input type="radio" name="question23" > Pure water  <br>
+        <input type="radio" name="question23" > impure water  <br>
+        <input type="radio" name="question23" id="correct23">clean water  <br>
+        <input type="radio" name="question23">all<br>
+        <button class="Next" onclick="next(24)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">At-tahaarah literally means ______. <hr>
+        </div>
+        <input type="radio" name="question24" >Ablution <br>
+        <input type="radio" name="question24" id="correct24"> Neatness <br>
+        <input type="radio" name="question24">Meditation <br>
+        <input type="radio" name="question24">Purification  <br>
+        <button class="Next" onclick="next(25)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Removing dirts from our private parts with water is called _______.  <hr>
+        </div>
+        <input type="radio" name="question25"> Istijmaar  <br>
+        <input type="radio" name="question25"id="correct25"> istinjaa'  <br>
+        <input type="radio" name="question25">ghusl  <br>
+        <input type="radio" name="question25">wuduu' <br>
+        <button class="Next" onclick="next(26)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question"> Cleaning with other materials aside water is termed _______. <hr>
+        </div>
+        <input type="radio" name="question26" id="correct26"> Istijmaar  <br>
+        <input type="radio" name="question26"> istinjaa'  <br>
+        <input type="radio" name="question26">wuduu'  <br>
+        <input type="radio" name="question26">ghusl <br>
+        <button class="Next" onclick="next(27)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">Wuduu' is a precondition for _____.  <hr>
+        </div>
+        <input type="radio" name="question27"id="correct27"> Salat  <br>
+        <input type="radio" name="question27"> Zakat  <br>
+        <input type="radio" name="question27">Sawm  <br>
+        <input type="radio" name="question27">Tilaawah <br>
+        <button class="Next" onclick="next(28)">Next</button>
+    </div>
+    <div class="container">
+        <div class="question">All vitiate wuduu' except ______.  <hr>
+        </div>
+        <input type="radio" name="question28" > urinating  <br>
+        <input type="radio" name="question28"> defecating  <br>
+        <input type="radio" name="question28">deep sleep  <br>
+        <input type="radio" name="question28" id="correct28">eating  <br>
+        <button class="Next" onclick="next(29)">Next</button>
+    </div>
+
+    <div class="container">
+        <div class="question">	_____ is an obligatory aspect of wuduu'. <hr>
+        </div>
+        <input type="radio" name="question29" > Washing of hands  <br>
+        <input type="radio" name="question29"> washing of face  <br>
+        <input type="radio" name="question29">inhaling water <br>
+        <input type="radio" name="question29"id="correct29">saying bismillaah <br>
+        <button class="Next" onclick="next(30)">Next</button>
+    </div>
+
+                    <!-- last submit button and options -->
+    <div class="container">
+        <div class="question">_____ is not an obligatory aspect of wuduu'. <hr>
+        </div>
+        <input type="radio" name="question30" id="correct30"> Having intention  <br>
+        <input type="radio" name="question30"> rubbing with hands 	 <br>
+        <input type="radio" name="question30">wiping the head  <br>
+        <input type="radio" name="question30">wiping the ear <br>
+        <button onclick="getInputValue() 
+        result()">Submit Quizz</button>
+    </div>
+
+</body>
+<script src="file.js"></script>
+</html>
