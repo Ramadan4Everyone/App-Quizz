@@ -37,6 +37,9 @@ body{
         height: 300px;
     }
 } 
+h3{
+    margin-left: 140px;
+}
 .question{
     color: yellow;
     font-size: 28px;
